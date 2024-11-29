@@ -1,10 +1,43 @@
 // Add event chuyển tab giữa các bài
-let Bai1 = document.querySelector("#bai1");
-let Bai2 = document.querySelector("#bai2");
+function changeContent(bai) {
+  const content1 = document.getElementById("content_1");
+  const content2 = document.getElementById("content_2");
+  const content3 = document.getElementById("content_3");
+  const content4 = document.getElementById("content_4");
+  const content5 = document.getElementById("content_5");
 
-// Bai1.addEventListener("click", function () {
-//   document.querySelector(".content").innerText = "";
-// });
+  if (bai === "Bai1") {
+    content1.style.display = "block";
+    content2.style.display = "none";
+    content3.style.display = "none";
+    content4.style.display = "none";
+    content5.style.display = "none";
+  } else if (bai === "Bai2") {
+    content2.style.display = "block";
+    content1.style.display = "none";
+    content3.style.display = "none";
+    content4.style.display = "none";
+    content5.style.display = "none";
+  } else if (bai === "Bai3") {
+    content3.style.display = "block";
+    content1.style.display = "none";
+    content2.style.display = "none";
+    content4.style.display = "none";
+    content5.style.display = "none";
+  } else if (bai === "Bai4") {
+    content4.style.display = "block";
+    content1.style.display = "none";
+    content2.style.display = "none";
+    content3.style.display = "none";
+    content5.style.display = "none";
+  } else if (bai === "Bai5") {
+    content5.style.display = "block";
+    content1.style.display = "none";
+    content2.style.display = "none";
+    content3.style.display = "none";
+    content4.style.display = "none";
+  }
+}
 
 // Bài 1
 
