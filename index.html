@@ -81,6 +81,7 @@
         </ul>
         <!-- Content -->
         <div class="p-6 bg-orange-100 text-gray-500 rounded-lg w-full">
+          <!-- Bài 1 -->
           <div id="content_1" class="hidden">
             <h3 class="text-lg font-bold text-black mb-2">
               Bài 1: Tính tiền lương nhân viên
@@ -122,24 +123,183 @@
             </div>
           </div>
 
+          <!-- Bài 2 -->
           <div id="content_2" class="hidden">
-            <h3 class="text-lg font-bold text-black mb-2">Bài 2</h3>
-            <p class="mb-2">ND bai 2</p>
+            <h3 class="text-lg font-bold text-black mb-2">
+              Bài 2: Tính giá trị trung bình
+            </h3>
+            <div class="form-group mb-2">
+              <div class="card w-50 mx-auto">
+                <div class="card-body">
+                  <div class="form-group text-black">
+                    <p>Nhập số thứ 1:</p>
+                    <input
+                      type="number"
+                      class="form-control rounded-xl my-3"
+                      id="soThu1"
+                    />
+                  </div>
+                  <div class="form-group text-black">
+                    <p>Nhập số thứ 2:</p>
+                    <input
+                      type="number"
+                      class="form-control rounded-xl my-3"
+                      id="soThu2"
+                    />
+                  </div>
+                  <div class="form-group text-black">
+                    <p>Nhập số thứ 3:</p>
+                    <input
+                      type="number"
+                      class="form-control rounded-xl my-3"
+                      id="soThu3"
+                    />
+                  </div>
+                  <div class="form-group text-black">
+                    <p>Nhập số thứ 4:</p>
+                    <input
+                      type="number"
+                      class="form-control rounded-xl my-3"
+                      id="soThu4"
+                    />
+                  </div>
+                  <div class="form-group text-black">
+                    <p>Nhập số thứ 5:</p>
+                    <input
+                      type="number"
+                      class="form-control rounded-xl my-3"
+                      id="soThu5"
+                    />
+                  </div>
+                </div>
+                <div class="text-center rounded-xl bg-orange-200 mt-5">
+                  <button
+                    onclick="tinhTrungBinh()"
+                    id="btnTB"
+                    class="btn bg-green-600 m-3 text-white rounded-xl p-2 font-semibold"
+                  >
+                    Tính trung bình
+                  </button>
+                  <div class="pb-3 font-bold text-black">
+                    Kết quả:
+                    <span class="btn" id="trungBinh">0</span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
+          <!-- Bài 3 -->
           <div id="content_3" class="hidden">
-            <h3 class="text-lg font-bold text-black mb-2">Bài 3</h3>
-            <p class="mb-2">ND bai 2</p>
+            <h3 class="text-lg font-bold text-black mb-2">
+              Bài 3: Quy đổi tiền
+            </h3>
+            <div class="form-group mb-2">
+              <div class="card w-50 mx-auto">
+                <div class="card-body">
+                  <div class="form-group text-black">
+                    <p>Nhập vào số tiền USD:</p>
+                    <input
+                      type="number"
+                      class="form-control rounded-xl my-3"
+                      id="usd"
+                    />
+                  </div>
+                </div>
+                <div class="text-center rounded-xl bg-orange-200 mt-5">
+                  <button
+                    onclick="doiTien()"
+                    id="btndoiTien"
+                    class="btn bg-green-600 m-3 text-white rounded-xl p-2 font-semibold"
+                  >
+                    Quy đổi tiền
+                  </button>
+                  <div class="pb-3 font-bold text-black">
+                    Tổng tiền:
+                    <span class="btn" id="tongTien">0</span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
+          <!-- Bài 4 -->
           <div id="content_4" class="hidden">
-            <h3 class="text-lg font-bold text-black mb-2">Bài 4</h3>
-            <p class="mb-2">ND bai 2</p>
+            <h3 class="text-lg font-bold text-black mb-2">
+              Bài 4: Tính diện tích, chu vi hình chữ nhật
+            </h3>
+            <div class="form-group mb-2">
+              <div class="card w-50 mx-auto">
+                <div class="card-body">
+                  <div class="form-group text-black">
+                    <p>Nhập vào chiều dài hình chữ nhật:</p>
+                    <input
+                      type="number"
+                      class="form-control rounded-xl my-3"
+                      id="chieuDai"
+                    />
+                  </div>
+                  <div class="form-group text-black">
+                    <p>Nhập vào chiều rộng hình chữ nhật:</p>
+                    <input
+                      type="number"
+                      class="form-control rounded-xl my-3"
+                      id="chieuRong"
+                    />
+                  </div>
+                </div>
+                <div class="text-center rounded-xl bg-orange-200 mt-5">
+                  <button
+                    onclick="tinh()"
+                    id="btnTinh"
+                    class="btn bg-green-600 m-3 text-white rounded-xl py-2 px-4 font-semibold"
+                  >
+                    Tính
+                  </button>
+                  <div class="pb-3 font-bold text-black">
+                    Diện tích:
+                    <span class="btn" id="dienTich">0</span>
+                    <br />
+                    Chu vi:
+                    <span class="btn" id="chuVi">0</span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
+          <!-- Bài 5 -->
           <div id="content_5" class="hidden">
-            <h3 class="text-lg font-bold text-black mb-2">Bài 5</h3>
-            <p class="mb-2">ND bai 2</p>
+            <h3 class="text-lg font-bold text-black mb-2">
+              Bài 5: Tính tổng 2 ký số
+            </h3>
+            <div class="form-group mb-2">
+              <div class="card w-50 mx-auto">
+                <div class="card-body">
+                  <div class="form-group text-black">
+                    <p>Nhập vào số có 2 chữ số:</p>
+                    <input
+                      type="number"
+                      class="form-control rounded-xl my-3"
+                      id="num"
+                    />
+                  </div>
+                </div>
+                <div class="text-center rounded-xl bg-orange-200 mt-5">
+                  <button
+                    onclick="tinhKySo()"
+                    id="btntinhKySo"
+                    class="btn bg-green-600 m-3 text-white rounded-xl p-2 font-semibold"
+                  >
+                    Tính tổng
+                  </button>
+                  <div class="pb-3 font-bold text-black">
+                    Tổng 2 ký số:
+                    <span class="btn" id="KySo">0</span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
