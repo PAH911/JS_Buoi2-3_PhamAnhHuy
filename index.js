@@ -39,15 +39,16 @@ function changeContent(bai) {
   }
 }
 
-// Bài 1
+// Bài 1: Nhập vào số tiền lương(1h) và số giờ làm. In ra tổng lương bằng số giờ nhân tiền lương
+function tinhTongLuong() {
+  // input
+  var songay = document.getElementById("songay").value;
+  var luong1ngay = document.getElementById("luong1ngay").value;
 
-// Input
-let luong1ngay = 20;
-let songay = 28;
+  // progress
+  tongLuong = songay * luong1ngay;
+  document.getElementById("tongLuong").innerHTML = tongLuong.toLocaleString();
 
-// Xử lý
-let luongtong = 0;
-luongtong = luong1ngay * songay;
-
-// Output
-console.log("Tổng lương =", luongtong);
+  // output
+  var tongLuong = 0;
+}

@@ -82,8 +82,44 @@
         <!-- Content -->
         <div class="p-6 bg-orange-100 text-gray-500 rounded-lg w-full">
           <div id="content_1" class="hidden">
-            <h3 class="text-lg font-bold text-black mb-2">Bài 1</h3>
-            <p class="mb-2">ND bai 1</p>
+            <h3 class="text-lg font-bold text-black mb-2">
+              Bài 1: Tính tiền lương nhân viên
+            </h3>
+            <div class="form-group mb-2">
+              <div class="card w-50 mx-auto">
+                <div class="card-body">
+                  <div class="form-group text-black">
+                    <p>Tiền lương 1 ngày:</p>
+                    <input
+                      type="number"
+                      class="form-control rounded-xl my-3"
+                      id="luong1ngay"
+                    />
+                  </div>
+                  <div class="form-group text-black">
+                    <p>Số ngày làm:</p>
+                    <input
+                      type="number"
+                      class="form-control rounded-xl my-3"
+                      id="songay"
+                    />
+                  </div>
+                </div>
+                <div class="text-center rounded-xl bg-orange-200 mt-5">
+                  <button
+                    onclick="tinhTongLuong()"
+                    id="btnTinhTien"
+                    class="btn bg-green-600 m-3 text-white rounded-xl p-2 font-semibold"
+                  >
+                    Tính tiền
+                  </button>
+                  <div class="pb-3 font-bold text-black">
+                    Tổng tiền:
+                    <span class="btn" id="tongLuong">0</span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
           <div id="content_2" class="hidden">
